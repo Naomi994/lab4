@@ -8,11 +8,11 @@ int main(int input1, char* input2[]){
     }
   FILE *fileName = fopen(input2[1],"r"]; 
   if(fileName == NULL){
-    printf("File count not be opened: "); 
+    printf("File could not be opened: "); 
     return 1;
   }
   long countNum; 
-  fscant(fileName, "%old",&countNum[i]); 
+  fscant(fileName, "%d",&countNum[i]); 
   int holdNum[50];
   for(long i = 0; i < countNum;i++){
     fscanf(fileName,"%d",&holdNum[i])
